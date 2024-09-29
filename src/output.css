@@ -615,6 +615,14 @@ video {
   z-index: 10;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -699,6 +707,10 @@ video {
   height: 2rem;
 }
 
+.max-h-12 {
+  max-height: 3rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -719,6 +731,10 @@ video {
   width: auto;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -729,6 +745,10 @@ video {
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .flex-1 {
@@ -772,6 +792,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -804,6 +828,10 @@ video {
 
 .gap-y-16 {
   row-gap: 4rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -871,6 +899,11 @@ video {
 
 .fill-gray-900 {
   fill: #111827;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-1 {
@@ -1130,6 +1163,14 @@ video {
     inset: auto;
   }
 
+  .sm\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .sm\:col-start-auto {
+    grid-column-start: auto;
+  }
+
   .sm\:ml-6 {
     margin-left: 1.5rem;
   }
@@ -1150,12 +1191,25 @@ video {
     display: none;
   }
 
+  .sm\:max-w-xl {
+    max-width: 36rem;
+  }
+
+  .sm\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
   .sm\:items-stretch {
     align-items: stretch;
   }
 
   .sm\:justify-start {
     justify-content: flex-start;
+  }
+
+  .sm\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
   }
 
   .sm\:px-6 {
@@ -1192,6 +1246,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1211,6 +1269,10 @@ video {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:px-8 {
