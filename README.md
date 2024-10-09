@@ -12,7 +12,6 @@ Clone the project
   git clone https://github.com/duy-binh/Layout_Taiwind.git
 ```
 
-
 Start the server
 
 ```bash
