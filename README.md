@@ -4,7 +4,7 @@
 
 https://github.com/duy-binh/Layout_Taiwind.git
 
-## Run Project 
+## Run Project
 
 Clone the project
 
